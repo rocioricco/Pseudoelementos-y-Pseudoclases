@@ -1,0 +1,20 @@
+button{
+    width: 300px;
+    height: 150px;
+    border-radius: 10%;
+}
+
+button::before{
+    content: 'Pasar por encima';
+}
+.cambios:hover{
+    color:#ffff;
+    background-color: rgb(43, 230, 43);
+}
+.cambios:hover::after{
+    content: 'Hecho!';
+}
+
+.cambios:hover::before{
+    visibility: hidden;
+}
